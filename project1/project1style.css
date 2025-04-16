@@ -1,0 +1,9 @@
+:root{   /*:root is a pseudo-class that matches the document's root element*/
+     --primarycolor:rgb(240, 53, 184);
+     --primarylightcolor:rgb(248, 169, 225); /*primary color is mandatory, all website should have primary color, need to be defined*/
+     --secondarycolor: rgb(250, 227, 123); /*secondary color is a custom property, all website can have secondary color but it is not mandatory*/
+}
+.titlebg{/*title  bg is custom class*/
+    background-color: var(--primarycolor) !important;
+    color: var(--secondarycolor);
+}
