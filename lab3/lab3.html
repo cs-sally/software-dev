@@ -45,9 +45,9 @@
     <br>
     <h2>Definition List or description list</h2>
     <dl>
-        <dt>Cats</dt>
+        <dt><strong><em>Cats</em></strong></dt>
         <dd>The cat is domestic species for small carnivorous mammal.</dd>
-        <dt>Dogs</dt>
+        <dt><strong><em>Dogs</em></strong></dt>
         <dd>The dog is a domesticated decendant of the wolf</dd>
     <br>
     <h2 id="tables">Tables</h2>
@@ -110,7 +110,7 @@
     </tfoot>
     </table>
     <br>
-    <h2>Images</h2>
+    <h2 id="images">Images</h2>
     <hr>
     <img src="images/my-laptop.jpg" alt="Image of My Laptop" width="300" title="My Laptop" height="200">
     <img src="images/my-laptop.jpg" alt="Image of My Laoptop" width="300" title="My Laptop" height="200">
@@ -136,11 +136,26 @@
     <ul>
         <li><a href="centralpark.html">Central Park</a></li>
         <li><a href="times_square.html">Times Square</a></li>
+        <li><a href="statue_of_liberty.html">Statue of Liberty</a></li>
     </ul>
     <p><em>image mapping</em></p>
-    I love a specific section for the same webpage
+    <!--target map-->
+    <figure><img src="images/my-laptop.jpg" alt="Image of My Laptop" width="500" title="My Laptop" height="400" usermap="#my-laptop ">
+        <figcaption><em>I Love Computer -- 2025</em></figcaption></figure>
+    <!--define map-->
+    <map name="my-laptop">
+        <area shape="rect" coords="200,150,300,250" href="computer.html" alt="Linked to Computer"></map> <!--coords is coordinates, clickable  hotspot with in the image, Example: coords="200,150,300,250" defines a rectangle starting at (200px from left, 150px from top) and ending at (300px from left, 250px from top).-->
+
     <p>Link to a specific section for the samme webpage</p>
-    
+    <nav> <!--nav element is semantic div. nav used to define a set of navigation links.-->
+        <a href="#">Go to the beginning</a>  <!--href="#" is used to link to the top of the page.-->
+        <a href="#tables">Tables</a><!--href="#tables" is used to link to the tables section of the same page.-->
+        <span>|</span>
+        <a href="#images">Images</a><!--href="#images" is used to link to the images section of the same page.-->
+        <span>|</span> <!--span element is used to group inline-elements in a document. It provides no visual change by itself.-->
+    </nav>
+
+   
     <br><br>
     <hr>
     <h2>Lab Exercise</h2>
