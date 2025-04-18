@@ -67,7 +67,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: rgb(220, 20, 137);
+    color: rgb(240, 53, 184);
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -83,7 +83,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: rgb(220, 20, 137)
+    background: rgb(240, 53, 184)
 }
 .navbar .max-width{
     display: flex;
@@ -96,11 +96,11 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: rgb(220, 20, 137)
+    color: rgb(240, 53, 184)
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-    color:  rgb(220, 20, 137)
+    color:  rgb(240, 53, 184)
 }
 .navbar .menu li{
     list-style: none;
@@ -115,14 +115,14 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: rgb(220, 20, 137)
+    color: rgb(240, 53, 184)
 }
 .navbar.sticky .menu li a:hover{
-    color: rgb(220, 20, 137)
+    color: rgb(240, 53, 184)
 }
 /* menu btn styling */
 .menu-btn{
-    color: rgb(220, 20, 137)
+    color: rgb(240, 53, 184)
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -131,7 +131,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: rgb(220, 20, 137)
+    background: rgb(240, 53, 184)
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -186,12 +186,12 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: rgb(220, 20, 137)
+    color: rgb(240, 53, 184)
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: rgb(220, 20, 137)
+    background: rgb(240, 53, 184)
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
@@ -202,7 +202,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: rgb(220, 20, 137)
+    color: rgb(240, 53, 184)
     background: none;
 }
 /* about section styling */
@@ -227,14 +227,14 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: rgb(220, 20, 137)
+    color: rgb(240, 53, 184)
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: rgb(220, 20, 137)
+    background: rgb(240, 53, 184)
     color: #fff;
     font-size: 20px;
     font-weight: 500;
@@ -245,7 +245,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: rgb(220, 20, 137) 
+    color: rgb(240, 53, 184) 
     background: none;
 }
 /* services section styling */
@@ -264,7 +264,7 @@ section .title::after{
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: #f57bef;
+    background: rgb(248, 169, 225)
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
@@ -272,7 +272,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: rgb(220, 20, 137)
+    background:rgb(240, 53, 184)
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -282,7 +282,7 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: rgb(220, 20, 137)
+    color: rgb(240, 53, 184)
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
@@ -310,7 +310,7 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: rgb(220, 20, 137)
+    background: rgb(240, 53, 184)
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -321,7 +321,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color: rgb(220, 20, 137)
+    color: rgb(240, 53, 184)
     background: none;
 }
 .skills .skills-content .right .bars{
@@ -349,7 +349,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: rgb(220, 20, 137)
+    background: rgb(240, 53, 184)
 }
 .skills-content .right .html::before{
     width: 90%;
@@ -372,7 +372,7 @@ section .title::after{
     background-color: #ddc2f1;
 }
 .teams .carousel .card{
-    background: rgb(220, 20, 137)
+    background: rgb(240, 53, 184)
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -380,7 +380,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
-    background: rgb(220, 20, 137)
+    background: rgb(240, 53, 184)
 }
 .teams .carousel .card .box{
     display: flex;
@@ -402,7 +402,7 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid rgb(220, 20, 137)
+    border: 5px solid rgb(240, 53, 184)
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
@@ -418,7 +418,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid rgb(220, 20, 137)!important;
+    border: 2px solid rgb(240, 53, 184)!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -427,7 +427,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: rgb(220, 20, 137)!important;
+    background: rgb(240, 53, 184)!important;
 }
 /* contact section styling */
 .contact .title::after{
@@ -457,7 +457,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: rgb(220, 20, 137)
+    color: rgb(240, 53, 184)
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -495,7 +495,7 @@ section .title::after{
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{
-    border-color: rgb(220, 20, 137);
+    border-color: rgb(240, 53, 184);
 }
 .contact .right form .textarea textarea{
   padding-top: 10px;
@@ -506,7 +506,7 @@ section .title::after{
   align-items: center;
 }
 .right form .button-area button{
-  color: rgb(220, 20, 137)
+  color: rgb(240, 53, 184);
   display: block;
   width: 160px!important;
   height: 45px;
@@ -517,11 +517,11 @@ section .title::after{
   cursor: pointer;
   flex-wrap: nowrap;
   background: #fff;
-  border: 2px solid rgb(220, 20, 137);
+  border: 2px solid rgb(240, 53, 184)
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-  color: rgb(220, 20, 137);
+  color: rgb(240, 53, 184);
   background: none;
 }
 /* footer section styling */
@@ -532,7 +532,7 @@ footer{
     text-align: center;
 }
 footer span a{
-    color: rgb(220, 20, 137)
+    color: rgb(240, 53, 184);
     text-decoration: none;
 }
 footer span a:hover{
