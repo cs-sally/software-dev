@@ -15,23 +15,23 @@ print(f"Data type of False = {type(False)}")
 
 
 print('\n ----- Example 3:variables -----')
-# declare variables
+# Declare variables
 number1 = 25.5
 number2 = -12
 username = "Peter Pan"
 add_numbers = number1 + number2
 is_raining = True
 
-# prompt results
+# Prompt results
 print(f"{username}, the sum of {number1} and {number2} is {add_numbers}")
 print(f"  Is it raining today ? = {is_raining}")
 
 
 print('\n-----Example 4: assigning values to multiple variables -----')
-#  declare miltiple variables
+#  Declare miltiple variables
 item1,  item2, item3 = "apples", 25, False
 print(f"item1 = {item1},  item 2 = {item2}, item3 = {item3}")
-# declare miultiple varaibles with the same values
+# Declare miultiple varaibles with the same values
 score1 = score2 = score3 = 99
 print(f"score 1 = {score1}, score 2 = {score2}, score 3 = {score3}")
       
@@ -41,16 +41,16 @@ username = input()
 print(f"Collected  username = {username}")
 
 
-# Cas t from string to integer
+# Cast from string to integer
 print("Enter a lucky number: ") #can be removed to below.
 luckynumber = int(input("Enter a lucky number:")) #instead of above print statement.
 print(f"Lucky number = {luckynumber}")
 
-# double the lucky number.  Cas t from string to integer.
+# Double the lucky number.  Cas t from string to integer.
 dblucky = int(luckynumber)*2
 print(f"Doubled of lucky = {dblucky}")
 
-#  Cast integer(or float) in to string
+# Cast integer(or float) in to string
 triplenumber = str(dblucky) * 3   
 print(f"tripled the casted number = {triplenumber}")
 
@@ -80,14 +80,14 @@ y  =  float(input("Enter side 2: "))
 hyp =   (x**2 + y**2)**0.5
 # Prompt the result
 print(f"The hypotenuse of {x : 0.1f} and {y : 0.1f} is {hyp: 5.2f}") #  5 is the total number of digits, 2 is the number of decimal places.
-#  The result is rounded to 2 decimal places.
+# The result is rounded to 2 decimal places.
 
 print('\n-----Example 8: assignment operators -----')
 n = 20
 print(f"number =         {n}")
 # Assignment operators  +
 n += 3
-print(f"number +3 =      {n}") #  This is the same as n = n + 3.
+print(f"number +3 =        {n}") #  This is the same as n = n + 3.
 n -= 4
 print(f"updated - number = {n}") #  This is the same as n = n - 4.
 n *=  2
@@ -95,11 +95,11 @@ print(f"updated * number = {n}") #  This is the same as n = n - 4.
 n /= 3
 print(f"updated / number = {n}") #  This is the same as n = n - 4.
 n //= 2
-print(f"updated // number = {n} ") #  This is the same as n = n - 4.
+print(f"updated // number = {n}") #  This is the same as n = n - 4.
 n -= 4
 print(f"updated - number = {n}") #  This is the same as n = n - 4.
 
-#  Modulus or  remainder operator
+# Modulus or remainder operator
 n  %= 5
 print(f"updated %= number = {n}") #  This is the same as n = n - 4.
 
