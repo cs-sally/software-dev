@@ -3,210 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 4, Introduction to CSS</title>
-    <style>
-        h1{background-color: darkblue; color:floralwhite; font-family: "Arial black"; text-align:center;}
-        h2.author{color:blueviolet;text-align:right;}
-        .author{font-family: cursive;}
-        p.fontweight{font-weight: bolder; font-size:20px}
-        p.fontstyle{font-style:italic; font-size:10px}
-        p.author{font-size: 120%;}
-        p#intro{text-align: justify;}
-        .subtitle{border-bottom: dashed 2px blueviolet;}
+    <title>Lab 4, introduction to CSS</title>
+    <style> /*property colon value*/
+        h1{background-color: darkblue; color: floralwhite; font-family: "Arial black";} 
+        h2.author{color: blueviolet; text-align: right;} 
+        .author{font-family: cursive;}  /*deduct name of  the class from the class name, culvive is a font family for the text*/
+        p.fontweight{font-weight: bolder; font-size: 20px;}
+        p.fontstyle{font-style: italic; font-size: 10px;} /*italic is a font style for the text*/
+        p.author{font-size: 120%;}  
+        p#intro{text-align: justify;} /*justify is a y that both the left and right edges of the text block*/
+        .subtitle{border-bottom: dashed 2px blueviolet;} /*no semicolon in same character*/
         .box1, .box2, .box3, .box4{background-color: aqua;}
-        .box1{border:orange dotted 5px; margin-top:100px; padding-left:50px;}
-        .box2{border:olive 20px groove; margin:50px; padding:20px;}
-        .box3{border:red 3px solid; margin:200px 150px; padding:10px 100px;}
-        .box4{margin:30px 100px 200px 50px; padding:50px 20px 70px 100px;}
-    </style>
-    <link rel="stylesheet" href="style.css">
+        .box1{border: orange outset 5px; margin-top: 100px; padding-left: 50px;} /*outset is a border style value*/
+        .box2{border: olivedrab 20px groove; margin: 50px; padding: 20px;} /*groove is a borader style value*/
+        .box3{border: red 3px solid; margin: 200px 150px; padding: 10px 100px;} /*double is a border style value*/ 
+        .box4{margin: 30px 100px 200px 50x; padding: 50px 20px 70px 100px;}  /*clockwise margin and padding values*/
+       </style>
 </head>
 <body>
     <h1>Introduction to CSS</h1>
-    <p id="intro">CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear.
-        CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear.</p>
-    <p>CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear.
-        CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear.</p>
-    <p class="author">By: Yahaira Rodriguez</p>
-    <h2 class="author" id="typology">Typology</h2>
-    <p class="author">Styling text</p>
-    <p class="fontweight">Paragraph with font-weigth bold</p>
-    <p class="fontstyle">paragraph with font style italic</p>
+    <p id="intro">CSS (Cascading Style  Sheets) Allows  you to  create rules that specifiy how the content of an element should appear</p>
+    <p>CSS (Cascading Style  Sheets) Allows  you to  create rules that specifiy how the content of an element should appear</p>
+    <p class="author">By: Student's full name</p> 
+    <p class="author">By: Student's full name</p> 
+    <h2 class="author">Typology</h2>
+    <p class="author">Styling</p>
+    <p class="font-weight">Paragrah with font-weight bold</p>
+    <p class="fontstyle">Paragraph with font style</p>
     <h2 class="subtitle">Borders</h2>
-    <div class="box1">Box 1: CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear.
-        CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear.</div>
+    <div class="box1">box1: CSS (Cascading Style  Sheets) Allows  you to  create rules that specifiy how the content of an element should appear</div>
     <hr>
-    <div class="box2">Box 2: CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear.
-        CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear.</div>
+    <div class="box2">box2: CSS (Cascading Style  Sheets) Allows  you to  create rules that specifiy how the content of an element should appear</p>
+    </div>
     <hr>
-    <div class="box3">Box 3: CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear.
-        CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear.</div>
+    <div class="box3">box3: CSS (Cascading Style  Sheets) Allows  you to  create rules that specifiy how the content of an element should appear</div>
     <hr>
-    <div class="box4">Box 4: CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear.
-        CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear.</div>
-    <hr>
-    <h2 class="subtitle">Text shadow</h2>
-    <h3 class="shadow1">Sally</h3>
-    <h3 class="shadow2">Sally</h3>
-    <h3 class="shadow3">Sally</h3>
-    <h3 class="shadow4">Sally</h3>  
-    <h3 class="shadow5">Sally</h3>
-    <h3 class="shadow6">Sally</h3>
-
-    <h2 class="subtitle">Box shadow</h2>
-    <div class="shadowbox1">Box 1</div>
-    <div class="shadowbox2">Box 2</div>
-    <div class="shadowbox3">Box 3</div>
-    <div class="shadowbox4">Box 4</div>
-    <div class="shadowbox5">Box 5</div>
-
-    <h2 class="subtitle">Rounded borders</h2>
-    <div class="radiusbox1">Box 1</div>
-    <div class="radiusbox2">Box 2</div>
-    <div class="radiusbox3">Box 3</div>
-    <div class="radiusbox4">Box 4</div>
-    <div class="radiusbox5">Box 5</div>
-
-    <h2 class="subtitle" id="images">Basic image formatting</h2>
-    <img class="blossomimg blossom1" src="images/blossom.jpg" alt="images of a blossom tree">
-    <img class="blossomimg blossom2" src="images/blossom.jpg" alt="images of a blossom tree">
-    <img class="blossomimg blossom3" src="images/blossom.jpg" alt="images of a blossom tree">
-    <img class="blossomimg blossom4" src="images/blossom.jpg" alt="images of a blossom tree">
-
-    <h2 class="subtitle">Image filters</h2>
-    <figure>
-        <img class="blur1" src="images/blossom.jpg" alt="image of a blossom tree">
-        <figcaption>Blurred filter with 1px</figcaption>
-
-        <img class="blur2" src="images/blossom.jpg" alt="image of a blossom tree">
-        <figcaption>Blurred filter with 5px</figcaption>
-
-        <img class="blur3" src="images/blossom.jpg" alt="image of a blossom tree">
-        <figcaption>Blurred filter with 10px</figcaption>
-    </figure>
-
-    <figure>
-        <img style="filter: sepia(0%)" src="images/blossom.jpg" alt="Image of a blossom tree">
-        <figcaption>Sepia filter with 0%</figcaption>
-
-        <img style="filter: sepia(50%)" src="images/blossom.jpg" alt="Image of a blossom tree">
-        <figcaption>Sepia filter with 50%</figcaption>
-        
-        <img style="filter: sepia(100%)" src="images/blossom.jpg" alt="Image of a blossom tree">
-        <figcaption>Sepia filter with 100%</figcaption>
-    </figure>
-
-    <figure>
-        <img style="filter: invert(0%)" src="images/blossom.jpg" alt="Image of a blossom tree">
-        <figcaption>Invert filter with 0%</figcaption>
-
-        <img style="filter: invert(40%)" src="images/blossom.jpg" alt="Image of a blossom tree">
-        <figcaption>Invert filter with 40%</figcaption>
-        
-        <img style="filter: invert(100%)" src="images/blossom.jpg" alt="Image of a blossom tree">
-        <figcaption>Invert filter with 100%</figcaption>
-    </figure>
-
-    <h2 class="subtitle">Static and liquid layouts</h2>
-    <main class="maincontainer">
-        <div class="leftcolumn">
-            <section class="section">Information section</section>
-            <article class="article">Article section</article>
-        </div>
-        <aside class="rightcolumn">Aside for blogs</aside>
-        <section class="images">Images container</section>
-    </main>
-
-    <h2 id="cards">Cards</h2>
-    <section class="cardcontainer">
-        <div class="card">
-            <img class="imgcard" src="images/blossom.jpg" atl="image of a blossom tree">
-            <a class="linkcard" href="https://www.bbg.org/collections/cherries" target="_blank" rel="noopener noreferrer">Visit Blossom Garden</a>
-        </div>
-
-        <div class="card">
-            <img class="imgcard" src="images/blossom.jpg" atl="image of a blossom tree">
-            <a class="linkcard" href="https://www.bbg.org/collections/cherries" target="_blank" rel="noopener noreferrer">Visit Blossom Garden</a>
-        </div>
-
-        <div class="card2">
-            <img class="imgcard" src="images/blossom.jpg" atl="image of a blossom tree">
-            <h2 class="cardtitle">Brooklyn Botanical Garden</h2>
-            <p class="cardinfo">Brooklyn Botanical Garden occupies 52 acres in central Brooklyn</p>
-            <a class="linkcard2" href="https://www.bbg.org/collections/cherries" target="_blank" rel="noopener noreferrer">Visit Blossom Garden</a>
-        </div> 
-        <div class="card2">
-            <img class="imgcard" src="images/blossom.jpg" atl="image of a blossom tree">
-            <h2 class="cardtitle">Brooklyn Botanical Garden</h2>
-            <p class="cardinfo">Brooklyn Botanical Garden occupies 52 acres in central Brooklyn</p>
-            <a class="linkcard2" href="https://www.bbg.org/collections/cherries" target="_blank" rel="noopener noreferrer">Visit Blossom Garden</a>
-        </div> 
-        <div class="card2">
-            <img class="imgcard" src="images/blossom.jpg" atl="image of a blossom tree">
-            <h2 class="cardtitle">Brooklyn Botanical Garden</h2>
-            <p class="cardinfo">Brooklyn Botanical Garden occupies 52 acres in central Brooklyn</p>
-            <a class="linkcard2" href="https://www.bbg.org/collections/cherries" target="_blank" rel="noopener noreferrer">Visit Blossom Garden</a>
-        </div> 
-    </section>
-
-    <h2 class="subtitle">Navigation tabs</h2>
-    <ul class="navbar">
-        <li><a href="#">Home</a></li>
-        <li><a href="#typology">Topology</a></li> 
-        <li><a href="#images">Images</a></li>   
-        <li><a href="#cards">Cards</a></li>
-    </ul>
-
-    <h2 class="subtitle">Colors</h2>
-    <h3>RGB value</h3>
-    <section class="rgbcontainer">
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-
-    <h3>HEX code</h3>
-    <section class="hexcontainer">
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-
-    <h2 class="subtitle">Positions</h2>
-    <div class="imgcontainer">
-        <img src="images/blossom.jpg" alt="image of a blossom tree">
-        <p class="imgtitle">Brooklyn Botanical Garden</p>
-    </div> 
-    
-    <h2 class="subtitle">Background image</h2>
-    <section class="imgbackground">
-        <div></div>
-        <div></div>
-        <div></div>    
-    </section>
-    
-    <p>Linear gradient with 2+ colors</p>
-    <section class="imgbackground2">
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-   
-    <h2>Hero image with linear-gradient</h2>
-    <section class="heroimgcontainer">
-        <div class="herocontent">
-        <h3 class="herocontent_title">Brooklyn Botanical Garden</h3>
-        <p class="herocontent_intro">Spring cherries blossom collections</p>
-        <a class="herocontent_link" href="https://www.bbg.org/collections/cherries" target="_blank" rel="noopener noreferrer">More info</a>
-        </div>
-    </section>
-
-    <nav class="navbarhorizontal fixedtabs">
-        <a href="#">Home</a>
-        <a href="#typology">Typology</a>
-        <a href="#images">Images</a>   
-        <a href="#cards">Cards</a>
-    </nav>
+    <div class="box4">box4: CSS (Cascading Style  Sheets) Allows  you to  create rules that specifiy how the content of an element should appear</p>
+    </div>
 
 </body>
 </html>
