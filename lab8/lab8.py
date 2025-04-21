@@ -46,7 +46,7 @@ print("Enter a lucky number: ") #can be removed to below.
 luckynumber = int(input("Enter a lucky number:")) #instead of above print statement.
 print(f"Lucky number = {luckynumber}")
 
-# Double the lucky number.  Cas t from string to integer.
+# Double the lucky number. Cast from string to integer.
 dblucky = int(luckynumber)*2
 print(f"Doubled of lucky = {dblucky}")
 
@@ -59,7 +59,7 @@ print(f"tripled the casted number = {triplenumber}")
 completed_task = -20 
 print(f"completed task = {bool(completed_task)}")
 
-print('\n-----Example 6:  arithmetic operators -----')
+print('\n-----Example 6: arithmetic operators -----')
 num1 = 5
 num2 = 9
 
@@ -76,7 +76,7 @@ print('\n-----Example 7:  arithmetic operators -----')
 # Declare and assign values to variables.
 x =  float(input("Enter side 1: "))
 y  =  float(input("Enter side 2: "))
-#  Calculate the hypotenusa
+# Calculate the hypotenuse
 hyp =   (x**2 + y**2)**0.5
 # Prompt the result
 print(f"The hypotenuse of {x : 0.1f} and {y : 0.1f} is {hyp: 5.2f}") #  5 is the total number of digits, 2 is the number of decimal places.
@@ -84,18 +84,18 @@ print(f"The hypotenuse of {x : 0.1f} and {y : 0.1f} is {hyp: 5.2f}") #  5 is the
 
 print('\n-----Example 8: assignment operators -----')
 n = 20
-print(f"number =         {n}")
+print(f"number =           {n}")
 # Assignment operators  +
 n += 3
 print(f"number +3 =        {n}") #  This is the same as n = n + 3.
 n -= 4
 print(f"updated - number = {n}") #  This is the same as n = n - 4.
 n *=  2
-print(f"updated * number = {n}") #  This is the same as n = n - 4.
+print(f"updated * number = {n}") #  This is the same as n = n * 2.
 n /= 3
-print(f"updated / number = {n}") #  This is the same as n = n - 4.
+print(f"updated / number = {n}") #  This is the same as n = n / 3.
 n //= 2
-print(f"updated // number = {n}") #  This is the same as n = n - 4.
+print(f"updated // number = {n}") #  This is the same as n = n // 2.
 n -= 4
 print(f"updated - number = {n}") #  This is the same as n = n - 4.
 
@@ -125,17 +125,17 @@ print(f"The fifth character = {username[4]}")
 
 
 # Negative indexing
-print(f"Thefifth last character =                       {username[-5]}")
+print(f"The fifth last character =                       {username[-5]}")
 
 print('\n-----Example 11: String slice -----')
 # Slice from the beginning to the 4th character
 print(f"Slice from the beginning to the 4th character = {username[:4]}")
 # Slice from the 5th character to the end
-print(f"Slice from the 5th character to the end =       {username[6:]}")
+print(f"Slice from the 5th character to the end =       {username[4:]}")
 # Slice from the 3th to the 8th character
 print(f"Slice from the 3th to the 8th character =       {username[2:8]}")
 
-# Slice from the 4th to the 6th character using negative iindexing
+# Slice from the 4th to the 6th character using negative indexing
 print(f"Slice from the 3th to the 8th character with step of 2 = {username[-8:-5]}")
 
 print('\n-----Example 12: total  characters in a string (len) -----')
