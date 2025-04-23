@@ -246,7 +246,7 @@ print('\n-----Example 26: index of a item in a list -----')
 index_olive = colors.index("olive")
 print(f"The index of color olive  is         {index_olive}")
 # index of color 'green'
-# index_green = colors.index('green') # ---> value error,  can't return index of unexisting value
+# index_green = colors.index('green') # ---> value error, can't return index of unexisting value
 # print(f"The index of color green is          {index_green}")
 
 
