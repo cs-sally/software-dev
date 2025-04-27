@@ -201,7 +201,7 @@ print('\n-----Example 20: +* operator on list -----')
 # Concatenate the first with the last color
 new_color = colors[0] + colors[-1]
 print(f"The new color is =            {new_color}")
-# C on catenate the 2nd color with the 3rd number
+# Concatenate the 2nd color with the 3rd number
 # new_word = colors[1] + numbers[2]  #--> data type error
 # print(f"The new word is                  {new_word}")
 
