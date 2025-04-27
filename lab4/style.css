@@ -302,10 +302,75 @@ html{scroll-behavior: smooth;}
     margin: auto;
     display: flex;
     justify-content: space-around ;
+} 
+.imgcontainer1, .imgcontainer2, .imgcontainer3{
+  width: 30%;
+  height: 500px;
+  border: solid gray 1px;
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
 }
-.img1, .img2, .img3{
+.image_contaner{
     width: 30%;
+    margin: 20px;
+    position: relative;
+    box-shadow: 0 4px  15px  rgb(190, 20, 150);
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.image_contaner img{
+    width: 100%;
     height: 500px;
     border: solid gray 1px;
+    margin: 1px;
+    display: flex;
+    flex-direction: column; /* To stack image and caption */
+    align-items: center; /* To center the caption */
 }
+/*  First  image - Eiffel Tower with  invert  filter */
+.img1 img{
+    filter: invert(30%);
+}
+.img1 .caption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: aqua;
+    color: #D2641E;
 
+}
+.img1_content{
+        margin-top: 10px; /* Add some space between the image and caption */
+        text-align: center;
+}
+.img2{
+    filter: blur(2px);
+}
+.img2_content{
+    background-color: rgba(0, 0, 255, 0.377);
+    align-items: center;
+    font-size: 15px;
+    color: #D2641E;
+    padding: 2em;
+    box-shadow: inset;
+    margin-top: 27%;
+}
+.img3{ 
+    filter: sepia(5px);
+}
+.img3_content{
+    background-image: linear-gradient(rgba(0, 0, 210, 0.5), rgba(56, 310, 59, 0.7)); 
+    
+}
+.img3_title {
+    font-style: italic;
+    text-align: center;
+}
+.img3_intro{
+    font-style: italic;
+    top: 10px;
+    left: 10px;
+    padding: 5px
+}           
