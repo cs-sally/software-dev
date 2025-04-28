@@ -17,6 +17,7 @@ car = {
 }
 # print a complete dictionary
 print(car)
+
 # to access items in a dictionary we use [],  where [] goes the key's name
 print(f"The year of the car is =  {car["year"]}")
 # update the value of the key
@@ -26,19 +27,20 @@ print("The year of the car was updated to = ", car['year'])
 # add key:value pair
 car["color"] = "red"
 print(car)
-print("\nLoop through each key in the dictionary")
+
+print("\n Loop through each key in the dictionary")
 for k in car:
     print(k)
-print("\nLoop through each value in the dictionary")
+print("\n Loop through each value in the dictionary")
 for k in car:
     print(car[k])
-print("\nLoop through each pair in the dictionary")
+print("\n Loop through each pair in the dictionary")
 for k in car:
     print(f"{k} has value = {car[k]}")
 
 print("\n----- Example 2: Python dictionary application ----- ")
-# given  the following list,  create a  dictionary that will counts the number of times that a word appearsin the string.
-# create a dictionary  will organize the words as the keys,  and the number of occurency of the word as the value of the key
+# given the following list, create a  dictionary that will counts the number of times that a word appears in the string.
+# create a dictionary  will organize the words as the keys, and the number of occurency of the word as the value of the key
 phrase = "to be or not to be"
 print(f"original phrase = {phrase}")
 phrase_split = phrase.split()
@@ -57,13 +59,13 @@ print("Result of dictionary: ")
 for w in word_count_dict:
     print(f"'{w}'= {word_count_dict[w]}")
 
-print("\n----- Example 3: function that doesn't return values ----- ")
+print("\n----- eample 3: function that doesn't return values ----- ")
 # call function 'greeting'
 greeting()
 
-print("\n----- example 4: function with paramenter -----")
+print("\n----- example 4: function with parameter -----")
 #  call function 'printusername'
-printusername("peter pan")
+printusername("Peter, Pan")
 printusername("Prof. Wu")
 
 print("\n---example 5, function with default paramenters")
@@ -100,3 +102,11 @@ r = 2
 a  =  areaprint(r)
 areaprint(a,r)
 
+print("\n ex10")
+ratio = ration_hour(5)
+print(ratio)
+try:
+    ratio = ratio_hour
+except:
+    print("Error with the function")
+print(ratio)
