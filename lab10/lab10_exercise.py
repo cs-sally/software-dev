@@ -15,9 +15,9 @@ found = False # Initializing Flag: "haven't found yet"
 
 for existing_color in colors:
     if  stripped_lowercase_color == existing_color:
-        print(f"The {stripped_lowercase_color} is in the list"):
+        print(f"The {stripped_lowercase_color} is in the list")
         found = True
         break # Exit the loop once found
-if not stripped_lowercase_color == existing_color:
-        print(f"The {stripped_lowercase_color} IS NOT in the list")
+if not found:
+    print(f"The {stripped_lowercase_color} IS NOT in the list")
 

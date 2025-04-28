@@ -103,7 +103,7 @@ a  =  areaprint(r)
 areaprint(a,r)
 
 print("\n ex10")
-ratio = ration_hour(5)
+ratio = ratio_hour(5)
 print(ratio)
 try:
     ratio = ratio_hour
