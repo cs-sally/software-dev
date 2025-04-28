@@ -115,6 +115,7 @@ while index < len_numbers:
 else:
     print(f"There  is/are {evencount} even numbers")
 
+for existing_color in colors:
 
 
 
