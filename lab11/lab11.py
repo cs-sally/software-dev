@@ -100,9 +100,9 @@ printresult(sumall)
 print("\n---example 9: built-in function----")
 r = 2
 a  =  areaprint(r)
-areaprint(a,r)
+areaprint(a, r)
 
-print("\n ex10")
+print("\n ------ Example 10: Try-except ------")
 ratio = ratio_hour(5)
 print(ratio)
 try:
@@ -110,3 +110,50 @@ try:
 except:
     print("Error with the function")
 print(ratio)
+
+print("\n ------ Example 11: classes ------")
+# create an instant of  the class
+user1 = Myclass()
+print(f"An instance of the class = {user1}")
+# call the class' property
+user1id = user1.id
+print(f"user 1 id = {user1id}")
+# call the class' method
+user1msg = user1.msg()
+print(f"user 1 message = {user1msg}")
+
+print("\n ------ Example 12: instantiation classes ------")
+
+# create an instant of the class
+paircomplexnumber = Complexnumber(2, 3)
+# call the instance object 'r of the class'
+real = paircomplexnumber.r
+print(f"The real part is {real}")
+
+print("\n ------ Example 13: classes application ------")
+#  create an instant of the class
+car1 = Car("Tesla", "S", 2023)
+# call property 'odormeter_reading'
+car_reading = car1.odormeter_reading
+print(f"Car miles reading = {car_reading}")
+# call method 'get_car_descrption'
+print(car1.get_car_description())
+# call method odometer
+print(car1.read_odometer())
+# update the odometer to mileage to = 10
+car1.update_odometer(10)
+print(car1.read_odometer())
+car1.update_odometer(5)
+print(car1.read_odometer())
+
+# add 20 miles to the odometer
+car1.increment_odometer(20)
+print(car1.read_odometer())
+car1.increment_odometer(-5)
+print(car1.read_odometer())
+car1.increment_odometer(8)
+print(car1.read_odometer())
+
+
+
+
