@@ -47,31 +47,23 @@ def collectnum():
     return n  # Return
 
 # function that adds 'totalnumbers' amount of numbers returns the sum of the numbers.
-def sumnumbers(totalnumbers):
-    sum_of_numbers = 0  # It's good practice to use descriptive variable names
-    for _ in range(totalnumbers):  # Using _ when the loop variable isn't directly used
-        sum_of_numbers += collectnum()  # composition function
-    return sum_of_numbers
+def sumnumbers(totalnumbers = 0):
+    sum = 0
+    for n in range(totalnumbers):
+        sum += collectnum()
+    return sum
 
-# function to print result
+# function to print value
 def printresult(totalsum):
     print(f"Sum of all numbers is = {totalsum}")
-
-# test collectnum()
-# number = collectnum(10)
-# print(number)
-# test sumnumbers()
-sumall = sumnumbers(3)
-printresult(sumall)
-print("\n------ Example 8: Composition Function ------") # Corrected and moved
-
-print("\n ------ Example 9: Built-in Function  ------")       
+ 
 # example 9 built-in function
 # define a function to calculate and return the area of a circle
 # formular = radius^2 * pi
 def areacircle(radius):
     a = math.pow(radius,2) * math.pi
     return round(a,2)
+
 #  function to print result
 def areaprint(area, radius=0):
     print(f"The area of a circle with {radius} radius is {area}")
@@ -82,9 +74,23 @@ print ("\n ------ Example 10: Try-except------")
 def ratio_hour(hour):
     try:
         dayhour = 24
-        return dayhour/hour
+        r = dayhour/hour
+    except ZeroDivisionError:
+        print('ZERO EXCEPTION')
+        print(f"number can't be divided by zero")
+        return 0
+    except ValueError:
+        print('VALUE EXCEPTION')
+        print("Number was not provided")
+        return 0
     except:
+        print('GENERAL EXCEPTION')
         print("There was an error in the division")
+    else:
+         print('DIVIDION IS FINE')
+         return r
+    finally:
+        print("----- Process completed! ----- ")
 
 # example 11
 # defining a class name 'Myclass'

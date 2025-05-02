@@ -94,7 +94,7 @@ print("\n---example 8: composition function----")
 #number = collectnum(10)
 #print(number)
 # test sumnembers()
-sumall = sumnumbers(3)
+sumall = sumnumbers(4)
 printresult(sumall)
 
 print("\n---example 9: built-in function----")
@@ -103,13 +103,9 @@ a  =  areaprint(r)
 areaprint(a, r)
 
 print("\n ------ Example 10: Try-except ------")
-ratio = ratio_hour(5)
-print(ratio)
-try:
-    ratio = ratio_hour
-except:
-    print("Error with the function")
-print(ratio)
+r1 = ratio_hour(0)
+r2 = ratio_hour(3)
+r3 = ratio_hour("Peter")
 
 print("\n ------ Example 11: classes ------")
 # create an instant of  the class
