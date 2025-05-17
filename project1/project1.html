@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sally's Portfolio</title>
     <link rel="stylesheet" href="project1style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 <body>
    <div>
@@ -30,7 +36,7 @@
             <div class="home-content">
                 <div class="text-1">Hello there, my name is</div>
                 <div class="text-2">Sally</div>
-                <div class="text-3">And I'm a Software Developer</div>
+                <div class="text-3">And I'm a Software  Developer and IT Specialist</div>
                 <a href="#">Hire me</a>
             </div>
         </div>
@@ -44,9 +50,9 @@
                     <img src="images/mydesktop.jpg" alt="My Desktop">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Sally and I'm a AI/ML Developer <span class="typing-2"></span></div>
+                    <div class="text">I'm an aspiring Software Engineer and IT Specialist <span class="typing-2"></span></div>
                     <p>Aspiring software engineer and AI/ML Developer. I also like reading books, listening to music, and also enjoy solving math problems.</p>
-                    <a href="pdf/Sally's Website.pdf">Download CV</a>
+                    
                 </div>
             </div>
         </div>
@@ -58,47 +64,46 @@
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
-                       
-                        <div class="text"><a href="https://github.com/" >Titanic Survival</a></div>
-                        <p>Built a front-end application in React that simulates a banking website. Has features such as login, user profile, and debit and credit menu</p>                    </div>
+                        <i class="fas fa-code"></i>
+                        <div class="text"><a href="https://github.com/cs-sally/portfolio/blob/main/machinelearning/titanic/titanic.ipynb" >Titanic Survival</a></div>
+                        <p>Predicted passenger survival on the Titanic using the provided dataset. The analysis includes data loading, exploration, and the development of a predictive model using a Random Forest classifier.</p>                    </div>
                 </div>
                 <div class="card">
                   <div class="box">
-                      <div class="text"><a href="https://github.com/">Cafe Menu </a></div>
-                      <p>Built a hare and tortoise competition program using object-oriented programming in C++</p>
+                      <i class="fas fa-paint-brush"></i>
+                      <div class="text"><a href="https://github.com/cs-sally/portfolio/blob/main/web/cafemenu/cafemenu-index.html">Cafe Menu </a></div>
+                      <p>Built a basic cafe menu webpage using fundamental HTML structure and CSS styling techniques.</p>
                   </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <div class="text"><a href="https://github.com/">BBC News article</a> </div>
-                        <p>Built a full stack CRUD application using HTML, CSS, JavaScript, 
-                          React, Redux, Node.js, Express, PostgreSQL. It’s a clone of ‘CUNY First’ website.</p>                    
+                           <i class="fas fa-code"></i>
+                        <div class="text"><a href="https://github.com/cs-sally/portfolio/blob/main/deeplearning/bbcnews/bbcnews-README.md">BBC News article</a> </div>
+                        <p> Aims to develop an application that uses a Large Language Model (LLM) to summarize BBC News articles. Currently, it's in the initial development phase.</p>                    
                     </div>
                 </div>
                 <div class="card">
                   <div class="box">
-                      <div class="text"> <a href="https://github.com/cs-sally/">Catphoto Apps</a></div>
-                      <p>Used Java to build out a flashcard app, 
-                        where the user can create and display 
-                        multiple-choice questions and build in 
-                        logic to show the answer. </p>                    
+                    <i class="fas fa-code"></i>
+                      <div class="text"> <a href="https://github.com/cs-sally/portfolio/blob/main/web/catapps/cat-index.html">Catphoto Apps</a></div>
+                      <p> Created as a practice project for learning HTML. It displays information about cats, including photos, lists of things cats love and hate, and a form for submitting cat photos.</p>                    
                       </div>
               </div>
               
                 <div class="card">
                     <div class="box">
-                        <div class="text"><a href="https://github.com/cs-sally/">AI Therapistbot</a>
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text"><a href="https://github.com/cs-sally/portfolio/blob/main/mobile/therapistbot/therapistbot-index.aia">AI Therapistbot</a>
                         </div>
-                        <p>Built a logic and problem game using arrow keys to move the tiles. 
-                          When two tiles with the same number touch, they merge into one tile with same number
-                           they summed to one.
+                        <p> Early stage mental health mobile application exploring the potential of no-code development platforms under MIT App Inventor. The app's design is based on active listening and therapeutic questioning.
                            </p>
                    </div>
                 </div>
                  <div class="card">
                   <div class="box">
-                      <div class="text" > <a href="https://github.com/cs-sally/">Outsmart Book Review</a></div>
-                      <p>Book review where play progresses to the next turn after a correct guess. User loses the game after an incorrect guess </p>                    
+                      <i class="fas fa-code"></i>
+                      <div class="text" > <a href="web/pyramid/pyramid-index.js">Pyramid Generator</a></div>
+                      <p>A simple web application that generates a pyramid pattern based on user-provided input using JavaScript Algorithms.</p>                    
                       </div>
               </div>
               
@@ -113,7 +118,7 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate recusandae laudantium esse, harum animi ipsum quam alias quaerat? Ad delectus natus aut hic explicabo minus quod.</p>
+                    <p>Full-stack web development</p>
                     <a href="#">Read more</a>
                 </div>
                 <div class="column right">
@@ -134,16 +139,9 @@
                     <div class="bars">
                         <div class="info">
                             <span>JavaScript</span>
-                            <span>80%</span>
+                            <span>70%</span>
                         </div>
                         <div class="line js"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>C++</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line php"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
@@ -151,6 +149,14 @@
                             <span>60%</span>
                         </div>
                         <div class="line mysql"></div>
+                    </div>
+                     <div class="bars">
+                        <div class="info">
+                            <span>C++</span>
+                            <span>20%</span>
+                        </div>
+                    </div>
+                        <div class="line php"></div>
                     </div>
                 </div>
             </div>
@@ -163,7 +169,7 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                    <p></p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
