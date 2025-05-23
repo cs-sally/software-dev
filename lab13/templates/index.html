@@ -9,7 +9,7 @@
 <body>
     <h1 class="title">Welcome to Flask! {{username}}</h1>
     <figure class="introimgcontainer">
-    <img src="../static/wall2.jpg" class="introimg">
+        <img src="../static/wall2.jpg" class="introimg">
     </figure>
     <section class="maincontainer">
         <ul>
@@ -18,12 +18,11 @@
         {% endfor %}
         </ul>
 
-        {% if checkfruit in listfruits %}
+        {%if checkfruit in listfruits%}
             <p>Great! We have {{checkfruit}} today</p>
         {% else %}
             <p>{{checkfruit}} is not in the list</p>
-        {% endif %}
-   
+        {% endif%}
     </section>
     <h2>HTTP request</h2>
     <form method="POST">
@@ -31,5 +30,7 @@
         <input type="submit"/>
     </form>
 
+    <h2>  <a href={{url_for("users")}}> Add new employee</a>   </h2>
+    <p>New employee is {{session['employee1']}}</p>
 </body>
 </html>

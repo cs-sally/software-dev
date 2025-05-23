@@ -1,5 +1,5 @@
 img{width: 100%; display: block;}
-.title{text-align: center; color: rgb(255, 0, 98);}
+.title{text-align: center; color:rgb(255, 0, 98);}
 .introimgcontainer, .maincontainer{
     width: 700px;
     margin: 2em auto;
@@ -9,3 +9,5 @@ img{width: 100%; display: block;}
     border: solid gray 2px;
     background-color: aliceblue;
 }
+/* users.html*/
+.infomessage{ color: crimson; font-size: 1.2rem;}
