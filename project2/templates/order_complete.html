@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Order Complete{% endblock %}
+{% block content %}
+<section id="order_complete" class="checkout">
+    <div class="max-width">
+        <h2 class="title">Order Complete</h2>
+        <div class="checkout-content">
+            <p class="order-confirmation">Thank you for your order!</p>
+            <p class="order-number">Your order number is: <strong>{{ order_id }}</strong></p>
+            <div class="checkout-summary">
+                <a href="{{ url_for('index') }}" class="submit-order-button">Back to Home</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

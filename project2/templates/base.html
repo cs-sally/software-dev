@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Sales Website{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1><a href="{{ url_for('index') }}">Sally</a></h1>
+        <nav>
+            <a href="{{ url_for('cart') }}">Cart</a> 
+            <a href="{{ url_for('register') }}">Register</a> 
+            <a href="{{ url_for('login') }}">Login</a>
+        </nav>
+    </header>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+    <footer><p>© 2025 Sally's Cosmetics</p></footer>
+</body>
+</html>

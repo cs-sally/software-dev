@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<section id="login" class="login">
+    <div class="max-width">
+        <h2 class="title">Login</h2>
+        <div class="login-content centered-form">
+            <div class="column centered">
+                <div class="text">Login</div>
+                <form method="POST" action="{{ url_for('login') }}">
+                    <div class="field username">
+                        <input type="text" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="field password">
+                        <input type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="button-area">
+                        <button type="submit">Login</button>
+                        {% if flash_messages %}
+                        <div class="flash-messages">
+                            {% for message in flash_messages %}
+                                <p class="flash">{{ message }}</p>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+

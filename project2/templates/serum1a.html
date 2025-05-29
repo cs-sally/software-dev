@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}serum1a{% endblock %}
+{% block content %}
+<section class="serum1a" id="serum1a">
+        <div class="max-width">
+            <h2 class="title">Hydrating Serum No.1</h2>
+            <div class="serum1a-content">
+                <div class="column left">
+                    {# Corrected image path for Flask static files #}
+                    <img src="{{ url_for('static', filename='images/serum1a.png') }}" alt="serum1a">
+                </div>
+                <div class="column right">
+                    <div class="text">Experience the radiant forever <span class="typing-2"></span></div>
+                    <p>Dreams Come True the Ideal, experience your radiant skin forever.</p>
+                </div>
+                <div class="text"><a href="/serum">Add to Cart</a></div>
+            </div>
+        </div>
+    </section>

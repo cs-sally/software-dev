@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jennifer Cortez Herrera: project 2 registration page</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css">
+    <script type="text/javascript" src="js/Jquery.js"></script>
+    <script type="text/javascript" src="js/lightslider.js"></script>
+  </head>
+  <body>
+    <!-- =========================== NAVBAR =========================== -->
+    <nav>
+      <div class="container">
+        <div><a href="index.html" class="logo">Oclock</a></div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="products.html" class="nav-link">Product</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="form.html" class="nav-link display-none">Sign in</a></li>
+          <li><a href="form.html" class="nav-link display-none">Login</a></li>
+        </ul>
+        <div class="nav-icons">
+          <ul>
+            <div class="hamburger"><i class="bx bx-menu"></i></div>
+            <li>
+              <a href="#"><i class="bx bx-search"></i></a>
+            </li>
+            <div class="gone">
+              <a href="#"><i class="bx bx-heart"></i></a>
+            </div>
+            <li>
+              <a href="checkoutForm.html"><i class="bx bx-shopping-bag"></i></a>
+            </li>
+            <div class="gone">
+              <a href="form.html"><i class="bx bxs-user"></i></a>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =========================== RESGISTRATION FORMS =========================== -->
+    <section class="forms">
+      <div class="container">
+        <div class="login">
+          <form action="">
+            <h1>Login</h1>
+            <div class="text-inputs">
+              <input type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="text-inputs">
+              <input type="password" placeholder="Enter your password" required>
+            </div>
+            <div class="password-settings">
+              <div class="inputs">
+                <input type="checkbox" id="check-password">
+                <label for="check-password" class="text">Remember me</label>
+              </div>
+              <a href="#">Forgot password?</a>        
+            </div>
+            <div class="submit-btn">
+              <button type="submit">Login</button>
+            </div>
+            <div class="signup-form">
+               <a href="#">Not a member? <span>Sign up now<span></a>
+            </div>
+          </form>
+        </div>
+        <div class="signup">
+          <form action="">
+            <h1>Sign up</h1>
+            <div class="text-inputs">
+              <input type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="text-inputs">
+              <input type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="text-inputs">
+              <input type="password" placeholder="Create a password" minlength="8" required>
+            </div>
+            <div class="conditions">
+              <input type="checkbox" id="terms" required>
+              <label for="terms">I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a></label>
+            </div>
+            <div class="submit-btn">
+              <button type="submit">Sign up</button>
+            </div>
+            <div class="login-form">
+              <a href="#">Already a memeber? <span>Login now</span></a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== FOOTER SECTION =========================== -->
+    <section id="contact" class="footer">
+      <footer>
+          <div class="container">
+              <div class="column">
+                  <h3>Oclock</h3>
+                  <p>The place for luxurious watches just for you. For microcrendential: project 2</p>
+                  <ul class="social-link">
+                      <li><i class='bx bxl-facebook-circle'></i></li>
+                      <li><i class='bx bxl-instagram'></i></li>
+                      <li><i class='bx bxl-twitter'></i></li>
+                      <li><i class='bx bxl-pinterest'></i></li>
+                  </ul>
+              </div>
+              <div class="column">
+                  <h3>Quick links</h3>
+                  <ul>
+                      <li><a href="index.html" class="footer-link">Home</a></li>
+                      <li><a href="#about" class="footer-link">About</a></li>
+                      <li><a href="products.html" class="footer-link">Product</a></li>
+                      <li><a href="#contact" class="footer-link">Contact</a></li>
+                      <li><a href="#" class="footer-link">Sign in</a></li>
+                      <li><a href="#" class="footer-link">Login</a></li>
+                  </ul>
+              </div>
+              <div class="column">
+                  <h3>Contact info</h3>
+                  <ul>
+                      <li><i class='bx bxs-map'></i> Lorem Street, Ipsum, JCH 12345</li>
+                      <li><i class='bx bxs-phone'></i> +1 123 456 7890</li>
+                      <li><i class='bx bxs-envelope'></i> 123@email.com</li>
+                  </ul>
+              </div>
+              <div class="column">
+                  <h3>Newsletter</h3>
+                  <p>Sign up now to receive exclusive offers, deals and gifts.</p>
+                  <label for="subscribe">
+                      <input type="email" id="subscribe" placeholder="Enter your email">
+                      <button type="submit"><i class='bx bx-right-arrow-alt'></i></button>
+                  </label>
+              </div>
+          </div>
+          <div class="outside">
+              <small> &copy; Design by Sally | All Rights Reserved</small>
+          </div>
+      </footer>
+    </section>
+
+    <script src="js/index.js" type="text/javascript"></script>
+
+  </body>
+</html>
