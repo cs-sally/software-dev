@@ -1,14 +1,16 @@
-{% extends "base.html" %}
-
-{% block title %}Sally's Cosmetic{% endblock %}
-
-{% block head_extra %}
-    {# External CSS libraries from file2's head #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sally's Cosmetic</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-{% endblock %}
-
-{% block content %}
+    <!--{# Local CSS file #}-->
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
@@ -25,8 +27,8 @@
             <h2 class="title">Idealist Serum</h2>
             <div class="about-content">
                 <div class="column left">
-                    {# Corrected image path for Flask static files #}
-                    <img src="{{ url_for('static', filename='images/serum1a.png') }}" alt="serum1a">
+                 {# Corrected image path for static files #}   
+                    <img src="static/images/serum1a.png" alt="serum1a">
                 </div>
                 <div class="column right">
                     <div class="text">Experience the radiant forever <span class="typing-2"></span></div>
@@ -34,7 +36,8 @@
                     <ul><li>$34.99</li>
                         <li>Serum1a</li>
                     </ul>
-                     <a href="{{ url_for('add_to_cart', product_id=1) }}">Add to Cart</a>
+                     <!-- Flask 'add_to_cart' route replaced with '#' for static page -->
+                     <a href="#">Add to Cart</a>
             </div>
                 
             </div>
@@ -47,8 +50,9 @@
                   <div class="card">
                     <div class="box">
                         <div class="image">
-                            <a href="/serum1a">
-                                <img src="{{ url_for('static', filename='images/serum1a.png') }}" alt="Gift Set 2" style="width: 100%; display: block;">
+                            <!-- Flask route '/serum1a' replaced with '#' for static page -->
+                            <a href="#">
+                                <img src="static/images/serum1a.png" alt="Gift Set 2" style="width: 100%; display: block;">
                             </a>
                         </div>
                 <div class="text"><a href="">Serum No.1</a></div>
@@ -58,8 +62,8 @@
                   <div class="card">
                     <div class="box">
                         <div class="image">
-                            <a href="">
-                                <img src="{{ url_for('static', filename='images/serum2a.png') }}" alt="Gift Set 2" style="width: 100%; display: block;">
+                            <a href="#">
+                                <img src="static/images/serum2a.png" alt="Gift Set 2" style="width: 100%; display: block;">
                             </a>
                         </div>
                 <div class="text"><a href="">Serum No.2</a></div>
@@ -69,8 +73,8 @@
                   <div class="card">
                     <div class="box">
                         <div class="image">
-                            <a href="">
-                                <img src="{{ url_for('static', filename='images/serum3a.png') }}" alt="Gift Set 2" style="width: 100%; display: block;">
+                            <a href="#">
+                                <img src="static/images/serum3a.png" alt="Gift Set 2" style="width: 100%; display: block;">
                             </a>
                         </div>
                 <div class="text"><a href="">Serum No.3</a></div>
@@ -86,8 +90,8 @@
             <h2 class="title">Gift Set</h2>
             <div class="skills-content">
                 <div class="column left">
-                    {# Corrected image path for Flask static files #}
-                    <img src="{{ url_for('static', filename='images/gift1a.png') }}" alt="1a">
+                   <!---{# Corrected image path for static files #}-->
+                    <img src="static/images/gift1a.png" alt="1a">
                 </div>
                 <div class="column right">
                     <div class="text">Experience the radiant forever <span class="typing-2"></span></div>
@@ -107,8 +111,9 @@
                   <div class="card">
                     <div class="box">
                         <div class="image">
-                            <a href="/gift1a">
-                                <img src="{{ url_for('static', filename='images/gift1a.png') }}" alt="Gift Set 2" style="width: 100%; display: block;">
+                            <!-- Flask route '/gift1a' replaced with '#' for static page -->
+                            <a href="#">
+                                <img src="static/images/gift1a.png" alt="Gift Set 2" style="width: 100%; display: block;">
                             </a>
                         </div>
                 <div class="text"><a href="">Gift set No.1</a></div>
@@ -118,8 +123,8 @@
                   <div class="card">
                     <div class="box">
                         <div class="image">
-                            <a href="">
-                                <img src="{{ url_for('static', filename='images/gift2a.png') }}" alt="Gift Set 2" style="width: 100%; display: block;">
+                            <a href="#">
+                                <img src="static/images/gift2a.png" alt="Gift Set 2" style="width: 100%; display: block;">
                             </a>
                         </div>
                 <div class="text"><a href="">Gift set No.2</a></div>
@@ -129,8 +134,8 @@
                   <div class="card">
                     <div class="box">
                         <div class="image">
-                            <a href="">
-                                <img src="{{ url_for('static', filename='images/gift3a.png') }}" alt="Gift Set 3" style="width: 100%; display: block;">
+                            <a href="#">
+                                <img src="static/images/gift3a.png" alt="Gift Set 3" style="width: 100%; display: block;">
                             </a>
                         </div>
                 <div class="text"><a href="">Gift set No.3</a></div>
@@ -199,14 +204,12 @@
             </div>
         </div>
     </section>
-{% endblock %}
-
-{% block scripts %}
-    {# External JS libraries from file2's head #}
+    <!--{# External JS libraries from file2's head #}-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    {# Local JS file, assuming it's moved to static/js/ #}
-    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
-{% endblock %}
+    <!--{# Local JS file, assuming it's moved to static/js/ #}-->
+    <script src="static/js/index.js"></script>
+</body>
+</html>
